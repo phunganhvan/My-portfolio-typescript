@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import About from "../components/sections/about";
+import About from "@/components/sections/about";
 
 const AboutPage = () => {
     return (
