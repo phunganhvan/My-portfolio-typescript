@@ -1,22 +1,24 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
+type ThemeContext = "light" | "dark";
+
 const AppContext = createContext<IAContext | null>(null);
 
 interface IAContext {
-    theme: string;
-    setTheme: (theme: string) => void;
+    theme: ThemeContext;
+    setTheme: (theme: ThemeContext) => void;
 }
 
 export const AppContextProvider = (props: { children: React.ReactNode }) => {
-    const [theme, setTheme] = useState(() => {
+    const [theme, setTheme] = useState<ThemeContext>(() => {
         const initialTheme = localStorage.getItem("theme") || "light";
-        return initialTheme;
+        return initialTheme as ThemeContext;
     });
 
     useEffect(() => {
         const mode = localStorage.getItem("theme");
         if (mode) {
-            setTheme(mode);
+            setTheme(mode as ThemeContext);
             document.documentElement.setAttribute('data-bs-theme', mode);
         }
     }, [])

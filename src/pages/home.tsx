@@ -1,14 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
-import HeroLeft from "../components/sections/hero/hero.left";
-import HeroRight from "../components/sections/hero/hero.right";
+import HeroLeft from "components/sections/hero/hero.left";
+import HeroRight from "components/sections/hero/hero.right";
 import { MdFileDownload } from "react-icons/md";
-import bg from '../assets/section.svg';
-import Introduction from "../components/sections/introduction";
-import ResizeButton from "../components/sections/resize.button";
+import bg from 'assets/section.svg';
+import Introduction from "components/sections/introduction";
+import ResizeButton from "components/sections/resize.button";
 import { useTranslation } from "react-i18next";
-import Divider from "../components/sections/divider";
-import Experience from "../components/sections/experience";
-import Skill from "../components/sections/skill";
+import Divider from "components/sections/divider";
+import Experience from "components/sections/experience";
+import Skill from "components/sections/skill";
 
 const HomePage = () => {
     const { t } = useTranslation();
