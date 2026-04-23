@@ -1,14 +1,14 @@
 import { Col, Row } from "react-bootstrap";
-import AnimationLottie from "../../share/animation-lottie";
-import codingJSON from '../../../assets/lottie/coding.json';
-import { DEVELOPMENT_LOTTIE } from "../../../assets/lottie/string/development";
-import { CONTACT_LOTTIE } from "../../../assets/lottie/string/contact";
+import AnimationLottie from "@/components/share/animation-lottie";
+import codingJSON from '@/assets/lottie/coding.json';
+import { DEVELOPMENT_LOTTIE } from "@/assets/lottie/string/development";
+import { CONTACT_LOTTIE } from "@/assets/lottie/string/contact";
 
-import GlowCard from "../../share/glow-card";
+import GlowCard from "@/components/share/glow-card";
 import { FaGraduationCap } from "react-icons/fa6";
-import Divider from "../divider";
-import { APP_DATA } from "../../../helpers/data";
-import SocialMedia from "../social.media";
+import Divider from "@/components/sections/divider";
+import { APP_DATA } from "@/helpers/data";
+import SocialMedia from "@/components/sections/social.media";
 
 const About = () => {
     return (
